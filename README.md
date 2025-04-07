@@ -32,19 +32,89 @@
 
 ---
 
-### **Cara Menggunakan:**
+Berikut **panduan lengkap cara menggunakan tools** `pajar.py` buatan kamu:
 
-1. Pastikan Python 3 dan modul `requests` serta `colorama` sudah terinstal:
-   ```bash
-   pip install requests colorama
-   ```
-2. Jalankan tools:
-   ```bash
-   python3 pajar.py
-   ```
-3. Masukkan nama file target (misal `targets.txt`).
-4. Pilih tipe scan yang diinginkan (pisahkan dengan koma jika lebih dari satu).
-5. Tunggu hasil scan ditampilkan dan disimpan otomatis ke `hasil.txt`.
+---
 
+### **1. Persiapan**
+#### a. Install Python Modules (jika belum)
+```bash
+pip install requests termcolor
+```
+
+#### b. Pindah ke direktori tempat script `pajar.py`
+```bash
+cd ~/tools
+```
+
+---
+
+### **2. Buat File Target**
+File ini berisi daftar URL yang akan discan.
+```bash
+nano pwk.txt
+```
+
+**Contoh isi file:**
+```
+http://example.com/index.php?id=1
+http://test.com/search.php?q=test
+```
+
+Simpan dengan:
+- Tekan `CTRL + X`
+- Ketik `Y`, lalu `Enter`
+
+---
+
+### **3. Jalankan Tools**
+```bash
+python3 pajar.py
+```
+
+---
+
+### **4. Pilih Mode Scan**
+Setelah tools jalan:
+- Masukkan nama file target: `pwk.txt`
+- Pilih jenis scan (contoh: `1` untuk XSS, `2` untuk SQLi, dll)
+- Konfirmasi dengan `y` saat ditanya "Lanjutkan?"
+
+---
+
+### **5. Jenis Scan yang Tersedia**
+| Nomor | Jenis Scan         |
+|-------|---------------------|
+| 1     | Scan XSS            |
+| 2     | Scan SQL Injection  |
+| 3     | Scan Redirect       |
+| 4     | Scan LFI            |
+| 5     | Scan HTML Injection |
+| 6     | Scan .env Leak      |
+| 7     | Scan Admin Panel    |
+| 8     | SEMUA SCAN          |
+
+---
+
+### **6. Hasil**
+Langkah melihat hasil:
+Tampilkan isi folder sebelumnya:
+pesta
+
+Salin kode
+ls
+Pastikan ada berkas hasil.txtdi situ.
+
+ Buka hasil.txt untuk dibaca:
+pesta
+
+Salin kode
+nano hasil.txt
+Kalau kamu cuma mau lihat tanpa edit:
+
+pesta
+
+Salin kode
+cat hasil.txt
 ---
 

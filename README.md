@@ -71,6 +71,11 @@ Simpan dengan:
 ```bash
 python3 pajar.py
 ```
+kalau tidak ini runnya pakai ini
+git clone https://github.com/pajarpriandan/tools
+cd tools
+pip install requests colorama
+kalian nano dulu file target contoh target.txt buat url target  terus kalau sudah  python3 pajar.py
 
 ---
 
